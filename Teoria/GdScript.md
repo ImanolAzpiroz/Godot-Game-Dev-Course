@@ -32,6 +32,8 @@ func _input(event):
 ```
 
 ### Variables
+Las variables son generalmente del tipo que se le asigne.<br>
+Un entero puede cambiar a booleano si asi se quiere.
 ```
     var health = 100
 
@@ -54,3 +56,49 @@ func _input(event):
     var vec2 = Vector2(x, y)
     var vec3 = Vector3(x, y, z)
 ```
+
+### Funciones
+```
+func _input(event):
+    if event.is_action_pressed("my_action"):
+        jump()
+
+func jump():
+    # Fuerza hacia arriba
+    # Reproducir Sonido
+    # Animacion de salto
+    print("Jump")
+
+# Con Parametros
+func add(num1, num2):
+    var result = num1 + num2
+    return result
+```
+
+### Vectores
+```
+var items: ["Potion", 3, 5]
+var texts: Array[String] = ["String0", "String1", "String3"] 
+
+print(items[0])
+```
+
+### For
+```
+for item in items:
+    print(item)
+
+for n in 8
+    print(n)
+
+```
+
+### While
+```
+var glass:= 0.0
+
+while glass < 0.5
+    glass += randf_range(0.01, 0.2)
+    print(glass)
+```
+
